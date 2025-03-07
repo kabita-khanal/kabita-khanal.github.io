@@ -145,6 +145,7 @@ sr.reveal('', { duration: 1000 })
 sr.reveal('', { duration: 1000 })
 sr.reveal('', { duration: 1000 })
 sr.reveal('.contact__container', { duration: 1000 })
+sr.reveal(`.logos__img`, { interval: 100 })
 
 //typing animation
 var typed = new Typed(".home__typing", {
