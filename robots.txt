@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /tmp/
+
+# Allow search engines to crawl everything else
+Allow: /
+
+# Specify sitemap location
+Sitemap: https://www.kabitakhanal.com.np/sitemap.xml
