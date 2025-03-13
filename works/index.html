@@ -14,7 +14,62 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="/assets/css/styles.css">
 
-    <link rel="icon" href="/assets/img/title.png" type="img/x-icon">
+    <style>
+        .works__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .work__item {
+            background: #1a1a2e;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .work__item:hover {
+            transform: scale(1.05);
+        }
+
+        .work__img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .work__content h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .work__content p {
+            color: #b2b2b2;
+            margin-top: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            background: #ff4b5c;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #e0434f;
+        }
+    </style>
+
+    <!-- <link rel="icon" href="/assets/img/title.png" type="img/x-icon"> -->
 
     <title>KABITA| Content Strategist</title>
 </head>
@@ -34,7 +89,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="/works/" class="nav__link active-link">
-                            <i class="uil uil-scenery nav__icon"></i> Works
+                            <i class="uil uil-scenery nav__icon"></i> Work Experience
                         </a>
                     </li>
                     <li class="nav__item">
@@ -64,6 +119,75 @@
 
     <!--==================== MAIN ====================-->
     <main class="main">
+        <section class="works section" id="works">
+            <div class="container">
+                <h2 class="section__title">My Work Experience</h2>
+                <p class="section__description" style="text-align: justify;">
+                    I've been working in the digital marketing field since 2022. I started as an intern, focusing on
+                    writing social media content for brands, which was a great learning experience and laid the
+                    groundwork for my growth.
+
+                    Eventually, I worked as Social Media Manager/Campaign Manager at the same company, where I managed
+                    the social media accounts for over 15+ different clients and executed successful digital and
+                    influencer campaigns. I'm a detail-oriented team player who loves working with others and managing
+                    my time effectively to get the best results.
+                </p>
+                <br>
+
+                <h1>Brands I've worked with...</h1>
+                <div class="works__grid">
+                    <!-- Project 1 -->
+                    <div class="work__item">
+                        <img src="/assets/img/work/p3.png" class="work__img">
+                        <div class="work__content">
+                            <h3>Agni | Mahindra</h3>
+                            <p>Brand identity & campaign design for Mahindra’s auto division.</p>
+                            <a href="project-page-mahindra.html" class="button">
+                                View More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="work__item">
+                        <img src="/assets/img/work/9060.png" class="work__img">
+                        <div class="work__content">
+                            <h3>Sujal Dairy | DELITE</h3>
+                            <p>Packaging and visual branding for Sujal Dairy’s new product line.</p>
+                            <a href="project-page-sujal.html" class="button">
+                                View More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="work__item">
+                        <img src="/assets/img/work/p1.png" class="work__img">
+                        <div class="work__content">
+                            <h3>Laxmee Hair & Beauty Studio</h3>
+                            <p>Rebranding for a beauty salon’s digital presence.</p>
+                            <a href="project-page-laxmee.html" class="button">
+                                View More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="work__item">
+                        <img src="/assets/img/work/p4.webp" class="work__img">
+                        <div class="work__content">
+                            <h3>PEUGEOT Motocycles</h3>
+                            <p>Marketing visuals and branding for Peugeot’s new motorcycle launch.</p>
+                            <a href="project-page-peugeot.html" class="button">
+                                View More <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
         <section class="about_project section" id="home">
             <div class="about_project__container container grid">
                 <div class="about_project__content grid" style="background-color: hsl(240, 76%, 56%);">
@@ -142,7 +266,7 @@
                     </div>
 
                 </div>
-        </section>
+        </section> -->
 
 
 

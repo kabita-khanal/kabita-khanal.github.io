@@ -155,3 +155,4 @@ var typed = new Typed(".home__typing", {
     loop: true
 
 })
+

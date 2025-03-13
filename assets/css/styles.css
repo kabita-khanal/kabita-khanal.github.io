@@ -89,6 +89,12 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
+  cursor: url('/assets/img/cursor/cursor.gif') 30 30, auto;
+}
+
+a,
+button {
+  cursor: url('/assets/img/cursor/cursor-click.gif') 30 30, pointer;
 }
 
 h1,
@@ -1537,4 +1543,14 @@ footer .wave#wave4 {
 
 .logos__img {
   width: 120px;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease;
 }
